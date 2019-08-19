@@ -44,6 +44,7 @@ class SignupActivity : AppCompatActivity() {
                 override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
                     val toast = Toast.makeText(applicationContext, getString(R.string.account_created), Toast.LENGTH_LONG)
                     toast.show()
+                    finish()
                 }
 
             })
