@@ -1,0 +1,28 @@
+app:
+  jwtSecret: n4#wk3CCuMldt^g5z2nQ7mTCC3epKR
+  jwtExpirationInMs: 604800000
+
+server:
+  port: 1800
+
+spring:
+  properties: test
+  application:
+    name: finances
+  datasource:
+    url: jdbc:h2:mem:finances
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  main:
+    allow-bean-definition-overriding: true

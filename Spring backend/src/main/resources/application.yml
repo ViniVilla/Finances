@@ -1,0 +1,25 @@
+app:
+  jwtSecret: n4#wk3CCuMldt^g5z2nQ7mTCC3epKR
+  jwtExpirationInMs: 604800000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/finances
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    validationQuery: SELECT 1
+  jpa:
+    open-in-view: false
+    show-sql: true
+    format-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  main:
+    allow-bean-definition-overriding: true
