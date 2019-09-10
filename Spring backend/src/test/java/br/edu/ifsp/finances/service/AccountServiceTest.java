@@ -1,10 +1,12 @@
 package br.edu.ifsp.finances.service;
 
 import br.edu.ifsp.finances.BaseTest;
+import br.edu.ifsp.finances.domain.request.AccountRequest;
 import br.edu.ifsp.finances.exception.BadRequestException;
 import br.edu.ifsp.finances.factory.entity.AccountFactory;
 import br.edu.ifsp.finances.factory.entity.AccountTypeFactory;
 import br.edu.ifsp.finances.factory.entity.UserFactory;
+import br.edu.ifsp.finances.repository.AccountRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
