@@ -4,6 +4,7 @@ import br.edu.ifsp.finances.BaseTest;
 import br.edu.ifsp.finances.exception.BadRequestException;
 import br.edu.ifsp.finances.factory.entity.TransactionCategoryFactory;
 import br.edu.ifsp.finances.factory.entity.UserFactory;
+import br.edu.ifsp.finances.repository.TransactionCategoryRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
