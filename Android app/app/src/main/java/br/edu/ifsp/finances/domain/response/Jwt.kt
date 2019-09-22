@@ -1,4 +1,4 @@
-package br.edu.ifsp.finances.domain
+package br.edu.ifsp.finances.domain.response
 
 import com.google.gson.annotations.SerializedName
 

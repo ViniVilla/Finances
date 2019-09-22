@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_account_types"
+                android:icon="@drawable/ic_menu_account_type_24dp"
+                android:title="Account types"/>
+        <item
+                android:id="@+id/nav_accounts"
+                android:icon="@drawable/ic_menu_account_24dp"
+                android:title="Accounts"/>
+        <item
+                android:id="@+id/nav_transaction_categories"
+                android:icon="@drawable/ic_menu_category_24dp"
+                android:title="Transaction categories"/>
+        <item
+                android:id="@+id/nav_transactions"
+                android:icon="@drawable/ic_menu_transaction_24dp"
+                android:title="Transactions"
+                android:checked="true"/>
+    </group>
+
+</menu>
