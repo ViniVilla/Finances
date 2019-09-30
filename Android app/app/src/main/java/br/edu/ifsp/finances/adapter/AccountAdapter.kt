@@ -9,6 +9,7 @@ import androidx.annotation.NonNull
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import br.edu.ifsp.finances.R
+import br.edu.ifsp.finances.activity.AddAccountActivity
 import br.edu.ifsp.finances.domain.response.AccountResponse
 import br.edu.ifsp.finances.endpoint.AccountEndpoint
 import br.edu.ifsp.finances.utils.getToken
@@ -42,6 +43,10 @@ class AccountAdapter (val parentFragment: Fragment, val accountResponses : Mutab
     }
 
     fun update(accountResponse: AccountResponse, position: Int) : Boolean{
+        var intentNew = Intent(parentFragment.context, AddAccountActivity::class.java)
+        intentNew.putExtra("position", position)
+        intentNew.putExtra("account", accountResponse)
+        parentFragment.startActivity(intentNew)
 
         return true
     }

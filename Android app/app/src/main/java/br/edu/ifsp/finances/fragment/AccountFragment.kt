@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.edu.ifsp.finances.R
+import br.edu.ifsp.finances.activity.AddAccountActivity
 import br.edu.ifsp.finances.adapter.AccountAdapter
 import br.edu.ifsp.finances.domain.response.AccountResponse
 import br.edu.ifsp.finances.endpoint.AccountEndpoint
@@ -57,7 +58,7 @@ class AccountFragment : Fragment() {
     }
 
     fun fabClick(){
-
+        startActivity(Intent(this.context, AddAccountActivity::class.java))
     }
 
     @Override
