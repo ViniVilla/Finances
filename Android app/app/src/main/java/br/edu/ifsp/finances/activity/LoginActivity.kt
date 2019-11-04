@@ -51,6 +51,8 @@ class LoginActivity : AppCompatActivity() {
         }
 
         login()
+
+        startActivity(Intent(this, DrawerActivity::class.java))
     }
     fun openSignup(){
         startActivity(Intent(this, SignupActivity::class.java))

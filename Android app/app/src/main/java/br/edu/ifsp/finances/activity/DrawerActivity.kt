@@ -13,6 +13,8 @@ import br.edu.ifsp.finances.domain.User
 import br.edu.ifsp.finances.endpoint.LoginEndpoint
 import br.edu.ifsp.finances.fragment.AccountFragment
 import br.edu.ifsp.finances.fragment.AccountTypeFragment
+import br.edu.ifsp.finances.fragment.TransactionCategoryFragment
+import br.edu.ifsp.finances.fragment.TransactionFragment
 import br.edu.ifsp.finances.utils.getToken
 import br.edu.ifsp.finances.utils.retrofitBuilder
 import com.google.android.material.navigation.NavigationView
@@ -62,8 +64,12 @@ class DrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
                 supportActionBar?.title = getString(R.string.account)
             }
             R.id.nav_transaction_categories -> {
+                showFragment(TransactionCategoryFragment())
+                supportActionBar?.title = getString(R.string.transaction_category)
             }
             R.id.nav_transactions -> {
+                showFragment(TransactionFragment())
+                supportActionBar?.title = getString(R.string.transaction)
             }
         }
 
